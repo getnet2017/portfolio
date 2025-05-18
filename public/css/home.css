@@ -1,0 +1,188 @@
+body {
+    background-color: #eae2e0;
+    color: #2d3748;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    padding: 1rem 2rem;
+    background-color: #27ef52;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin: auto;
+}
+
+nav a {
+    margin: 0.5rem 1rem;
+    text-decoration: none;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap between image and text */
+}
+
+.nav-left a.font-bold {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+nav a:hover {
+    color: #60aaeb;
+}
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.project-card {
+    background-color: #f33d0f;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project-card a {
+    color: #3182ce;
+    text-decoration: underline;
+}
+
+.project-card a:hover {
+    color: #2b6cb0;
+}
+
+.header-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center; /* Center align the content */
+    }
+
+    nav a {
+        margin: 0.25rem 0;
+    }
+
+    .header-title {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    /* Personal information section for small screens */
+    .nav-left {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ensure the profile image is centered */
+    .profile-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    /* Align the four links (home, about, projects, contact) under the personal information */
+    .nav-left, .nav-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Add some margin to the links */
+    nav a {
+        margin: 0.5rem 0;
+    }
+}
+
+/* Image styling */
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+/* Modal overlay */
+#imageModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal image */
+#modalImage {
+    max-width: 90%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+#imageModal:target {
+    display: flex;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    /* prevent parent containers from interfering */
+    overflow: visible !important;
+}
+
+.profile-image {
+    width: 40px; /* or your preferred size */
+    height: 40px;
+    border-radius: 50%;
+}
