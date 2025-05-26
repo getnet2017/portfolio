@@ -41,6 +41,18 @@
             </a>
         </strong>
     </p>
+    <br><br>
+    <!-- GitHub with icon and link -->
+    <p class="flex items-center space-x-6 mt-8">
+        <i class="fab fa-github text-gray-800" style="font-size: 2rem;"></i>
+        <strong class="text-gray-800">
+            GitHub:
+            <a href="https://github.com/getnet2017" target="_blank" class="hover:underline text-blue-700">
+                github.com/getnet2017
+            </a>
+        </strong>
+    </p>
+
 </div>
 
 
